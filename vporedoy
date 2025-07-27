@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Connect securely with our global VPN network. Choose your country and protect your privacy." />
+  <title>Global VPN | Secure Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>🌐 Global VPN Dashboard</h1>
+
+    <section aria-labelledby="status-heading">
+      <h2 id="status-heading" class="sr-only">VPN Connection Status</h2>
+      <p>Status: <span id="vpn-status" aria-live="polite">Disconnected</span></p>
+    </section>
+
+    <form aria-labelledby="vpn-form-title">
+      <h2 id="vpn-form-title" class="sr-only">VPN Selection Form</h2>
+
+      <label for="server-select">🌍 Choose a country:</label>
+      <select id="server-select" name="server-select" aria-label="Select VPN Server Country">
+        <option value="us">United States</option>
+        <option value="gb">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="de">Germany</option>
+        <option value="fr">France</option>
+        <option value="in">India</option>
+        <option value="jp">Japan</option>
+        <option value="kr">South Korea</option>
+        <option value="br">Brazil</option>
+        <option value="ru">Russia</option>
+        <option value="sg">Singapore</option>
+        <option value="ae">United Arab Emirates</option>
+        <option value="au">Australia</option>
+        <option value="za">South Africa</option>
+        <option value="bd">Bangladesh</option>
+        <option value="pk">Pakistan</option>
+        <option value="it">Italy</option>
+        <option value="es">Spain</option>
+        <option value="se">Sweden</option>
+        <option value="ch">Switzerland</option>
+        <option value="tr">Turkey</option>
+        <option value="nl">Netherlands</option>
+        <option value="hk">Hong Kong</option>
+        <option value="th">Thailand</option>
+        <option value="my">Malaysia</option>
+        <option value="mx">Mexico</option>
+        <option value="pl">Poland</option>
+        <option value="ar">Argentina</option>
+        <option value="eg">Egypt</option>
+      </select>
+
+      <div class="buttons" role="group" aria-label="VPN Control Buttons">
+        <button type="button" id="connect-btn" aria-label="Connect to VPN">Connect</button>
+        <button type="button" id="disconnect-btn" aria-label="Disconnect VPN">Disconnect</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SecureVPN Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
